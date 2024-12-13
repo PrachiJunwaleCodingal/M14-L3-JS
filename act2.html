@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Act2- Sort and Reverse Numbers</title>
+</head>
+<body>
+  
+<p id="num"></p>
+<button onclick="fun1()">Ascending</button>
+<button onclick="fun2()">Descending</button>
+<p id="res"></p>
+    <script>
+        var num = [20,30,10,13,56]
+        document.getElementById("num").innerHTML = "Array:"+ num;
+        function fun1() {
+            num.sort(function (a, b) { return a - b });
+            document.getElementById("res").innerHTML = num;
+        }
+        function fun2() {
+            num.sort(function (a, b) { return b - a });
+            document.getElementById("res").innerHTML = num;
+        }
+    </script>
+</body>
+
+</html>

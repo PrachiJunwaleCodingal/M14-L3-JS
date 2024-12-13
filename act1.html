@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head> <title> Act1- Sort and Reverse string</title></head>
+<body>
+    <p id="text"></p>
+    <button onclick="fun1()">Sort String</button>
+    <button onclick="fun2()">Reverse String</button>
+    <p id="r"></p>
+    <script>
+     
+        var friends = ["Prachi", "Pihu","Aryan","Aayana"];
+        document.getElementById("text").innerHTML = "Original array: " + friends;
+        function fun1() {
+            friends.sort();
+            document.getElementById("r").innerHTML = friends;
+        }
+        function fun2() {
+            friends.reverse();
+            document.getElementById("r").innerHTML = friends;
+        }
+    </script>
+</body>
+
+</html>

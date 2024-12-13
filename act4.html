@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<title> Act4- Evaluate Variable</title>
+
+<body>
+
+    <button onclick="fun1()">Button</button>
+    <p id="result"></p>
+    <script>
+        function fun1() {
+            var num1 = 100
+            var num2 = 50
+            var r1 = eval("num1+num2") + "<br>";
+            var r2 = eval("num1-num2") + "<br>";
+
+
+            var res = r1 + r2;   //concatenate
+            document.getElementById("result").innerHTML = res;
+        }
+    </script>
+</body>
+
+</html>

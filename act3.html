@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <title> Act3- Map the array</title>
+<body>
+    <p>Map the array and add 10 in each numbers to create other mapping array</p>
+    <p id="res"></p>
+    <script>
+        var num = [56,34,20,45,60];
+
+        function fun1(n) {
+            return n + 10;
+        }
+        var arr2 = num.map(fun1);
+        document.getElementById("res").innerHTML = arr2;
+    </script>
+</body>
+
+</html>
